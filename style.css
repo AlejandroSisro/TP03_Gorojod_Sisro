@@ -1,0 +1,17 @@
+body {
+    background-color:#632935;
+}
+h1, p {
+    color: #D4AF37
+}
+.carousel {
+    width: 75%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 800px;
+    border: #D4AF37 5px solid;
+    border-radius: 1.35%;
+    box-shadow: 5px 5px 20px #000000;
+}
