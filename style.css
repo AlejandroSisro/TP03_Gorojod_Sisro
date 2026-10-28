@@ -89,6 +89,7 @@ img
   width: 70%;
   margin: auto;
   display: grid;
+  gap: 2%;
   grid-template-columns: 1fr 1fr 1fr; 
 }
 .Opiniones
@@ -201,13 +202,13 @@ ul{
     }
     .Discografia {
         grid-template-columns: 1fr; 
-        gap: 20px;
+        gap: 2%;
         justify-items: center;
     }
     .Opiniones {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 2%;
     }
     .FooterContenido {
         grid-template-columns: 1fr;
