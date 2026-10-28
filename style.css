@@ -28,12 +28,23 @@ img
 }
 .navbar
 {
-background-color: #1A2332;
+    background-color: #1A2332 !important;
 }
 .Discografia
 {
-  width: 100%;
-  display: flex;
-  gap: 5%;
-  justify-content: center;
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+}
+.card
+{
+    background-color: #1A2332 !important;
+}
+.Opiniones
+{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
 }
