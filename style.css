@@ -1,7 +1,7 @@
 body {
     background-color:#0A0910;
 }
-h1, h3, p, h4, h2, .nav-link, .menu-item, .navbar-brand {
+h1, h3, p, h4, h2, .nav-link, .menu-item, .navbar-brand, .form-label {
     color: #D4AF37 !important;
     text-align: center;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
@@ -25,6 +25,26 @@ img
 {
     border: #D4AF37 2px solid;
 }
+@keyframes achicar {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card {
+  animation-name: subir;
+  animation-duration: 0.8s;        
+  animation-timing-function: ease; 
+  animation-fill-mode: forwards;   
+}
+.card
+{
+    animation: achicar 1s;
+}
 .card img
 {
     border-bottom: #D4AF37 2px solid;
@@ -35,7 +55,7 @@ img
     margin-left: auto;
     display: block;
 }
-.navbar, .card, .menu, .form-control
+.navbar, .card, .menu, .form-control, form
 {
     background-color: #1C162E !important;
 }
@@ -45,6 +65,11 @@ img
     border: #40B3A2 2px solid;
     color: #D4AF37;
     font-weight: bold;
+}
+.btn-solid:hover
+{
+    background-color: #5cffe7 !important;
+    border: #D4AF37 2px solid;
 }
 .Botones
 {
@@ -88,4 +113,10 @@ img
 {
     border-bottom: 2px solid transparent !important;
     border-image: linear-gradient(to right, #D4AF37, #09ff00) 1 !important;
+}
+form
+{
+    margin: 1%;
+    padding: 1%;
+    border-radius: 6px;
 }
