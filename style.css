@@ -9,6 +9,10 @@ h1, h3, p, h4, h2, .nav-link, .menu-item, .navbar-brand, .form-label {
 .carousel {
     width: 75%;
 }
+header
+{
+  margin-bottom: 5%
+}
 img
 {
     margin-right: auto;
@@ -61,15 +65,15 @@ img
 }
 .btn-solid
 {
-    background-color: #40B3A2 !important;
-    border: #40B3A2 2px solid;
-    color: #D4AF37;
+    background-color: #FF4081 !important;
+    border: #FF4081 2px solid;
+    color: #ffd342;
     font-weight: bold;
 }
 .btn-solid:hover
 {
     background-color: #5cffe7 !important;
-    border: #D4AF37 2px solid;
+    border: #ffd342 2px solid;
 }
 .Botones
 {
@@ -119,4 +123,97 @@ form
     margin: 1%;
     padding: 1%;
     border-radius: 6px;
+}
+footer
+{
+  background-color: #1C162E;
+  margin-top: 5%;
+  padding: 2% 0;
+}
+.FooterContenido {
+  width: 100%;
+  background-color: #1C162E;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4%;
+  align-items: start;
+}
+.FooterSeccion ul {
+  padding: 0;
+  background-color: #1C162E;
+  margin: 0;
+}
+.FooterSeccion li {
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+.FooterSeccion a
+{
+  color: #5cffe7;
+}
+.FooterSeccion a:hover, header nav ul li a:hover {
+  color: #D4AF37;
+  text-decoration: underline;
+}
+.RedesSociales {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.RedesSociales ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+  padding: 0;
+}
+.RedesSociales ul li img {
+  width: 35%;
+}
+.FooterTrademark {
+  margin-top: 3%;
+  padding-top: 1.5%;
+  border-top: 0.1em solid #0B0C10;
+  width: 100%;
+}
+.FooterTrademark p {
+  font-size: 1em;
+  color: #D4AF37;
+}
+ul{
+  list-style: none;
+}
+@media (max-width: 768px) {
+    footer
+    {
+      width:100%;
+    }
+    .carousel {
+        width: 95%;
+    }
+    .Botones {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .Botones button {
+        width: 80%;
+    }
+    .Discografia {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        justify-items: center;
+    }
+    .Opiniones {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .FooterContenido {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .RedesSociales ul {
+        justify-content: center;
+    }
 }
